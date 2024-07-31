@@ -1,6 +1,8 @@
 interface Question{
     id: number;
+    category: string;
     question: string;
+    show: boolean;
     surveys : TopSurvey[];
 }
 

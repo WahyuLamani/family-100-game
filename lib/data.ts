@@ -14,7 +14,9 @@
   export const questions:Question[] = [
     {
       id: 1,
+      category:"Pertanyaan",
       question: 'Sebutkan hal-hal yang berhubungan dengan laut',
+      show: false,
       surveys: [
         { id: 1, value: 'air asin', points: 60 },
         { id: 2, value: 'ombak', points: 50 },
@@ -27,7 +29,9 @@
     },
     {
       id: 2,
+      category:"Pertanyaan",
       question: 'Apa yang kamu lakukan jika lupa menggosok gigi',
+      show: false,
       surveys: [
         { id: 1, value: 'Kumur Kumur', points: 30 },
         { id: 2, value: 'Makan Permen', points: 20 },
@@ -37,7 +41,9 @@
     },
     {
       id: 3,
+      category:"Pertanyaan",
       question: 'Apa yang dibicarakan kedua keluarga saat acara lamaran?',
+      show: false,
       surveys: [
         { id: 1, value: 'Tanggal', points: 30 },
         { id: 2, value: 'Hari Baik', points: 20 },
@@ -47,7 +53,9 @@
     },
     {
       id: 4,
+      category:"Pertanyaan",
       question: 'Mengapa seseorang dihindari temannya?',
+      show: false,
       surveys: [
         { id: 1, value: 'Sombong', points: 50 },
         { id: 2, value: 'Bau', points: 40 },
@@ -59,7 +67,9 @@
     },
     {
       id: 5,
+      category:"Pertanyaan",
       question: 'Bonus apa yang didapat saat membeli motor?',
+      show: false,
       surveys: [
         { id: 1, value: 'Helm', points: 50 },
         { id: 2, value: 'Jaket', points: 40 },
@@ -71,7 +81,9 @@
     },
     {
       id: 6,
+      category:"Pertanyaan",
       question: 'Apa yang dipakai agar kaki tidak lecet saat memakai sepatu baru?',
+      show: false,
       surveys: [
         { id: 1, value: 'Kaos Kaki', points: 30 },
         { id: 2, value: 'Plester', points: 20 },
@@ -81,7 +93,9 @@
     },
     {
       id: 7,
+      category:"Pertanyaan",
       question: 'Sebutkan sesuatu yang orang rasakan ketika terserang flu?',
+      show: false,
       surveys: [
         { id: 1, value: 'Pusing', points: 50 },
         { id: 2, value: 'Hidung Tersumbat', points: 40 },
@@ -93,7 +107,9 @@
     },
     {
       id: 8,
+      category:"Pertanyaan",
       question: 'Sebutkan makanan yang sering disantap saat sarapan',
+      show: false,
       surveys: [
         { id: 1, value: 'Nasi Goreng', points: 50 },
         { id: 2, value: 'Roti Bakar', points: 40 },
@@ -105,7 +121,9 @@
     },
     {
       id: 9,
+      category:"Pertanyaan",
       question: 'Apa yang dilakukan orang untuk mengatasi stres?',
+      show: false,
       surveys: [
         { id: 1, value: 'Meditasi', points: 40 },
         { id: 2, value: 'Berolahraga', points: 35 },
@@ -117,7 +135,9 @@
     },
     {
       id: 10,
+      category:"Pertanyaan",
       question: 'Sebutkan aktivitas yang dilakukan saat liburan',
+      show: false,
       surveys: [
         { id: 1, value: 'Berkemah', points: 40 },
         { id: 2, value: 'Mengunjungi Pantai', points: 35 },
@@ -129,7 +149,9 @@
     },
     {
       id: 11,
+      category:"Pertanyaan",
       question: 'Apa yang biasanya orang bawa saat pergi ke pantai?',
+      show: false,
       surveys: [
         { id: 1, value: 'Handuk', points: 40 },
         { id: 2, value: 'Sunblock', points: 35 },
@@ -141,7 +163,9 @@
     },
     {
       id: 12,
+      category:"Pertanyaan",
       question: 'Sebutkan sesuatu yang orang lakukan saat hujan deras',
+      show: false,
       surveys: [
         { id: 1, value: 'Berteduh', points: 50 },
         { id: 2, value: 'Membawa Payung', points: 40 },
@@ -153,7 +177,9 @@
     },
     {
       id: 13,
+      category:"Pertanyaan",
       question: 'Apa yang biasanya orang lakukan saat kehilangan pekerjaan?',
+      show: false,
       surveys: [
         { id: 1, value: 'Mencari Pekerjaan Baru', points: 40 },
         { id: 2, value: 'Membangun Usaha', points: 35 },
@@ -165,7 +191,9 @@
     },
     {
       id: 14,
+      category:"Pertanyaan",
       question: 'Apa yang sering dilakukan orang saat tidak bisa tidur di malam hari?',
+      show: false,
       surveys: [
         { id: 1, value: 'Membaca Buku', points: 40 },
         { id: 2, value: 'Mendengarkan Musik', points: 35 },
@@ -177,7 +205,9 @@
     },
     {
       id: 15,
+      category:"Pertanyaan",
       question: 'Sebutkan langkah-langkah untuk mengatasi kemacetan lalu lintas di kota besar',
+      show: false,
       surveys: [
         { id: 1, value: 'Meningkatkan Transportasi Umum', points: 50 },
         { id: 2, value: 'Membangun Jalan Tambahan', points: 40 },
