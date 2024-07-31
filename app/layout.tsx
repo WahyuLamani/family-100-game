@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Family 100 Pramita",
-  description: "Game sederhana family 100 by wahyu lamani",
+  title: "Cerdas Cermat Pramita",
+  description: "Game sederhana 17 agustus PRAMITA by wahyu lamani",
 };
 
 export default function RootLayout({
