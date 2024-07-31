@@ -17,9 +17,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} antialiased bg-gray-200`}>
-      <main className="flex min-h-screen flex-col items-center text-center p-24">
-        {children}
-        </main></body>
+        <main className="flex min-h-screen flex-col items-center text-center">
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
