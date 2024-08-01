@@ -1,7 +1,9 @@
+import PointCounter from "@/components/point-counter";
 import Link from "next/link";
 
 export default function Home() {
   return (
+    <>
     <div className="p-12 flex flex-wrap gap-3 items-center justify-center h-screen">
       <Link
         href={`/game-1`}
@@ -22,5 +24,7 @@ export default function Home() {
         Game Final
       </Link>
     </div>
+    <PointCounter/>
+    </>
   );
 }
