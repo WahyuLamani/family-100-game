@@ -1,5 +1,5 @@
 import { questions } from "@/lib/data";
-import OnGame from "@/app/game/[id]/ongame";
+import OnGame from "@/app/game-3/game/[id]/ongame";
 const PageGame = ({ params }: { params: { id: string } }) => {
   const id = parseInt(params.id);
   const question = questions.find((q) => q.id === id);
