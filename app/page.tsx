@@ -12,7 +12,7 @@ export default function Home() {
         Game pertama
       </Link>
       <Link
-        href={`#`}
+        href={`/game-2`}
         className="text-2xl w-[300px] font-bold px-10 py-6 bg-blue-500 text-white rounded-full"
       >
         Game kedua

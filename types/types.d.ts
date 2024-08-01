@@ -12,3 +12,8 @@ type TopSurvey = {
     value: string;
     points: number;
 }
+
+type GameCategory = {
+    id: number;
+    name: string;
+}
