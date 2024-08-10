@@ -16,6 +16,8 @@ const OnGame = ({ question }: { question: Question }) => {
         setErrorCount((prevCount) => prevCount + 1);
 
         triggerEffect("red", "/sounds/wrong.mp3");
+      } else if (event.key === "X"){
+        triggerEffect("red", "/sounds/wrong.mp3");
       } else if (effect) {
         triggerEffect("green", "/sounds/correct.mp3");
         setVisibleValues((prevVisibleValues) => ({
