@@ -7,7 +7,7 @@ const PageGame = ({ params }: { params: { id: string } }) => {
     return <div>Question not found</div>;
   }
   return (
-    <div className="p-12">
+    <div className="flex items-center justify-center h-screen">
       <OnGame question={question} />
     </div>
   );
