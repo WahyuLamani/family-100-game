@@ -56,7 +56,7 @@ const Card = ({
         }
       )}
     >
-      <span className="font-bold text-xl text-center">{category.name}</span>
+      <span className="font-bold text-3xl text-center">{category.name}</span>
     </div>
   );
 };
