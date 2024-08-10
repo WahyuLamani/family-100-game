@@ -2,6 +2,9 @@
 
 import { useState, useEffect } from "react";
 import clsx from "clsx";
+import { usePathname } from "next/navigation";
+import { handleCountingPoint } from "@/lib/utils";
+
 
 // const getInitialPoints: () => [number, number, number] = () => {
 //   const storedPoints = localStorage.getItem('points');
@@ -9,7 +12,8 @@ import clsx from "clsx";
 // };
 
 const PointCounter = () => {
-  const [points, setPoints] = useState([0, 0, 0]);
+  const [points, setPoints] = useState<[number, number, number]>([0, 0, 0]);
+  const pathName = usePathname();
 
   useEffect(() => {
     // Load points from localStorage when the component mounts
@@ -25,28 +29,8 @@ const PointCounter = () => {
   }, [points]);
 
   const handleKeyPress = (event: KeyboardEvent) => {
-    switch (event.key) {
-      case "i":
-        setPoints((prev) => [prev[0] + 10, prev[1], prev[2]]);
-        break;
-      case "o":
-        setPoints((prev) => [prev[0], prev[1] + 10, prev[2]]);
-        break;
-      case "p":
-        setPoints((prev) => [prev[0], prev[1], prev[2] + 10]);
-        break;
-      case "j":
-        setPoints((prev) => [prev[0] - 10, prev[1], prev[2]]);
-        break;
-      case "k":
-        setPoints((prev) => [prev[0], prev[1] - 10, prev[2]]);
-        break;
-      case "l":
-        setPoints((prev) => [prev[0], prev[1], prev[2] - 10]);
-        break;
-      default:
-        break;
-    }
+    const point: number = (pathName === "/game-2") ? 50 : 10
+    handleCountingPoint(event, point,setPoints);
   };
 
   useEffect(() => {

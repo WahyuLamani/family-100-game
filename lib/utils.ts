@@ -21,3 +21,28 @@ export const triggerEffect = (color: string, soundPath: string) => {
       }, 500);
     }, 200);
   };
+
+export const handleCountingPoint = (event: KeyboardEvent, point: number,points: React.Dispatch<React.SetStateAction<[number,number,number]>>) => {
+    switch (event.key) {
+      case "i":
+        points((prev) => [prev[0] + point, prev[1], prev[2]]);
+        break;
+      case "o":
+        points((prev) => [prev[0], prev[1] + point, prev[2]]);
+        break;
+      case "p":
+        points((prev) => [prev[0], prev[1], prev[2] + point]);
+        break;
+      case "I":
+        points((prev) => [prev[0] - point, prev[1], prev[2]]);
+        break;
+      case "O":
+        points((prev) => [prev[0], prev[1] - point, prev[2]]);
+        break;
+      case "P":
+        points((prev) => [prev[0], prev[1], prev[2] - point]);
+        break;
+      default:
+        break;
+    }
+  }
